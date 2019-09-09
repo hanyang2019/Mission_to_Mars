@@ -46,7 +46,13 @@ def scrape():
     html=browser.html
     soup=bs(html,'html.parser')
     results=soup.find_all('p',{'class':'TweetTextSize'})
-    tweet_list=[tweet.text.strip() for tweet in results] 
+    try:
+        for tweet in results:
+            unwanted=tweet.find('a')
+            unwanted.extract()
+    except AttributeError:
+            print('ok')
+    tweet_list=[tweet.text.strip() for tweet in results]
     for tweet in tweet_list:
         if ('InSight sol' in tweet):
             mars_weather=tweet.lstrip('InSight ')
