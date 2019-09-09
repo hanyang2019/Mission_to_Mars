@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                    <div class="jumbotron">
+                    <div class="text-center jumbotron">  <!--add .text-center class to center the button -->
                             <h1 class="display-4" align="center" >Mission to Mars</h1>
-                            <a class="btn btn-primary btn-lg" href="/scrape" role="button">SCRAPE NEW DATA</a>
-                          </div>
+                            <a class="btn btn-primary btn-lg" href="/scrape" role="button">SCRAPE NEW DATA</a>   
+                         </div>
             </div>
         </div>
 
@@ -41,7 +41,7 @@
                 <p>{{dict['latest_tweet']}}</p>
                 <br>
                 <h5>Mars Facts</h5>
-                <table class="table-sm">{{dict['table'] | safe}}</table>
+                <table class="table-sm">{{dict['table'] | safe}}</table> <!--{{dict['table'] | safe}}  '| safe' to make sure special characters rendered as it is--->
             </div>
         </div>
         <div class="row">
