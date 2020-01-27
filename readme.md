@@ -14,6 +14,7 @@ To build a web application that scrapes various websites for data related to the
 ## __Tools__
 * Python
 * MongoDB
+* HTML/CSS
 ----------
 ## __App Set-up__
 Import dependencies (Make sure to start MongoDB before running the app).
