@@ -12,6 +12,7 @@ To build a web application that scrapes various websites for data related to the
 * [USGS Astrogeology](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 ---
 ## __Tools__
+* Python
 ----------
 ## __App Set-up__
 Import dependencies (Make sure to start MongoDB before running the app).
