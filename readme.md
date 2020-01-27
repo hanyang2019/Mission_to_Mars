@@ -15,6 +15,7 @@ To build a web application that scrapes various websites for data related to the
 * Python
 * MongoDB
 * HTML/CSS
+* Jinja Template
 ----------
 ## __App Set-up__
 Import dependencies (Make sure to start MongoDB before running the app).
